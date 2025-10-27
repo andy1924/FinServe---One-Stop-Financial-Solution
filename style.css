@@ -1,0 +1,125 @@
+/* Simple, professional styles for the forms (Light Mode) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc; /* Very light gray background (slate-50) */
+    color: #1f2937; /* Dark default text (gray-800) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+}
+
+.form-container {
+    background-color: #ffffff; /* White card */
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb; /* Light gray border (gray-200) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+}
+
+.form-container.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2563eb; /* Primary blue (blue-600) */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.form-container > p {
+    text-align: center;
+    color: #6b7280; /* Muted dark text (gray-500) */
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: #374151; /* Dark text for labels (gray-700) */
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db; /* Medium-light gray border (gray-300) */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #ffffff; /* White input background */
+    color: #111827; /* Dark text inside input (gray-900) */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Highlight on focus (blue-500) */
+}
+
+.btn {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6; /* Primary blue (blue-500) */
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2563eb; /* Darker blue on hover (blue-600) */
+}
+
+.toggle-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6b7280; /* Muted dark text (gray-500) */
+}
+
+.toggle-link a {
+    color: #3b82f6; /* Primary blue (blue-500) */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.toggle-link a:hover {
+    text-decoration: underline;
+}
+
+/* For messages */
+.message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.message.error {
+    background-color: #fee2e2; /* Light red background (red-100) */
+    color: #991b1b; /* Dark red text (red-800) */
+    border: 1px solid #fca5a5; /* Red border (red-300) */
+}
+
+.message.success {
+    background-color: #dcfce7; /* Light green background (green-100) */
+    color: #166534; /* Dark green text (green-800) */
+    border: 1px solid #86efac; /* Green border (green-300) */
+}
